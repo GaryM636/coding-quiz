@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>JavaScript Quiz</title>
+</head>
+<body>
+
+<div id="quiz-container">
+    <h1>JavaScript Quiz</h1>
+    <div id="timer">Time Left: <span id="time-left">60</span></div>
+
+    <!-- Start Quiz Button -->
+    <button id="start-btn" class="btn">Start Quiz</button>
+
+    <!-- Questions and Answers Container -->
+    <div id="question-container"></div>
+    <div id="answer-buttons" class="btn-container"></div>
+
+    <!-- Result and Score Containers -->
+    <div id="result-container"></div>
+    <div id="score-container"></div>
+
+    <!-- Initials Form -->
+    <form id="initials-form" class="hide">
+        <label for="initials-input">Enter Initials:</label>
+        <input type="text" id="initials-input" maxlength="3" placeholder="ABC" required>
+        <button id="submit-btn" class="btn">Submit Initials</button>
+        <button id="restart-after-initials-btn" class="btn">Restart Quiz</button>
+    </form>
+
+    <!-- View High Scores Button -->
+    <button id="view-scores-btn" class="btn">View High Scores</button>
+
+    <!-- High Scores List -->
+    <ul id="scores-list" class="hide"></ul>
+</div>
+
+<script src="assets/scripts.js"></script>
+</body>
+</html>
